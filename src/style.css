@@ -307,13 +307,18 @@ body > .container .sessao-conhecimentos .conhecimentos .conhecimento:nth-child(6
     grid-column: 11/14;
     grid-row: 5/-1;
 }
-
-body > .container .sessao-conhecimentos .sessao-header{
+body > .container .sessao-header{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-body > .container .sessao-conhecimentos .sessao-header h1{
+/* body > .container .sessao-conhecimentos .sessao-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+body > .container .sessao-header h1{
     font-family: var(--font-primary);
     font-size: 3rem;
     color: #4b4b4b;
@@ -321,10 +326,19 @@ body > .container .sessao-conhecimentos .sessao-header h1{
     margin-bottom: 1.5rem;
 }
 
+/* 
+body > .container .sessao-conhecimentos .sessao-header h1{
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    color: #4b4b4b;
+    border-bottom: solid 3px #6a3093;
+    margin-bottom: 1.5rem;
+} */
+
 body > .container .sessao-conhecimentos .conhecimentos .conhecimento .conhecimento-header{
     display: flex;
     align-items: center;
-    color: #4b4b4b;
+    color: rgba(0, 0, 0,0.8);
 }
 
 body > .container .sessao-conhecimentos .conhecimentos .conhecimento .conhecimento-header i{
@@ -351,4 +365,88 @@ body > .container .sessao-conhecimentos .conhecimentos .conhecimento-img-wrapper
     object-fit: cover;
     width: 100%;
     opacity: 0.85;
+}
+
+body > .container .sessao-projetos .projetos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body > .container .sessao-projetos .projetos .card{
+    width: 18rem;
+    height: 27rem; 
+    position: relative;
+}
+
+body > .container .sessao-projetos .projetos .card .card-img-wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.8);
+    border-radius: 0.5rem;
+}
+
+body > .container .sessao-projetos .projetos .card .card-img-wrapper img{
+    object-fit: cover;
+    /* O Object-fit cover precisa de tamanho tb */
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    border-radius: 0.5rem;
+    transition: opacity 0.5s;
+}
+
+body > .container .sessao-projetos .projetos .card:hover .card-img-wrapper img{
+    opacity: 0.5;
+}
+
+body > .container .sessao-projetos .projetos .card .card-info{
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem 2rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+body > .container .sessao-projetos .projetos .card .card-info h2{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(230, 228, 228);
+}
+
+body > .container .sessao-projetos .projetos .card .card-info h3{
+    font-family: var(--font-action);
+    font-weight: bolder;
+    color: #e03870;
+    margin-bottom: 1rem;
+}
+
+body > .container .sessao-projetos .projetos .card .card-info p{
+    font-family: var(--font-secundary);
+    color: rgb(230, 228, 228);
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 1.5rem;
+}
+
+body > .container .sessao-projetos .projetos .card .card-info button{
+    background: #6a3093; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6a3093, #a044ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6a3093, #a044ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-family: var(--font-action);
+    font-size: 0.8rem;
+    color: rgb(230, 228, 228);
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+}
+
+body > .container .sessao-projetos .projetos .card:hover .card-info{
+    opacity: 1;
+    visibility: visible;
+    bottom: 0.5rem;
 }
