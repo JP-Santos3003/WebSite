@@ -486,6 +486,7 @@ body > .container .sessao-contato .contato-wrapper{
     width: 60%;
     height: 30rem;
     display: flex;
+    margin: 1.5rem 0rem;
 }
 
 body > .container .sessao-contato .contato-wrapper .contato-left{
