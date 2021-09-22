@@ -745,9 +745,10 @@ body > .container #link-topo{
     body > .container .sessao-contato .contato-wrapper{
         justify-content: center;
         align-items: center;
+        width: 80%;
     }
     body > .container footer .footer-content{
-        width: 70%;
+        width: 80%;
     }
 
     body > .container footer .footer-content p{
@@ -755,7 +756,7 @@ body > .container #link-topo{
     }
 
     body > .container .sessao-orcamento .orcamento-wrapper{
-        width: 80%;
+        width: 90%;
     }
     
 }
