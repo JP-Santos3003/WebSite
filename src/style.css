@@ -581,6 +581,7 @@ body > .container .sessao-orcamento .orcamento-wrapper h1{
     position: relative;
     top: -2.5rem;
     /* left: 2rem; */
+    line-height: 5rem;
     width: 60%;
     text-align: center;
     font-family: var(--font-primary);
@@ -596,7 +597,7 @@ body > .container .sessao-orcamento .orcamento-wrapper h1{
 }
 
 body > .container .sessao-orcamento  .orcamento-wrapper form{
-    padding: 20px;
+    padding: 0 5rem 5rem 5rem;
     display: grid;
     /* Primeira coluna com tamanho automático(de acordo com o conteúdo que tiver) e segunda ocupa o resto do tamanho */
     grid-template-columns: 1fr 1fr;
@@ -752,6 +753,10 @@ body > .container #link-topo{
     body > .container footer .footer-content p{
         font-size: 0.8rem;
     }
+
+    body > .container .sessao-orcamento .orcamento-wrapper{
+        width: 80%;
+    }
     
 }
 
@@ -786,6 +791,7 @@ body > .container #link-topo{
         grid-column: 4/14;
         grid-row: 11/-1;
     }
+
 }
 
 @media(max-width: 710px){
