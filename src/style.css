@@ -474,7 +474,6 @@ body > .container .sessao-projetos .projetos .card:hover .card-info{
 
 body > .container .sessao-contato{
     width: 100%;
-    height: 100vh;
     background-color: #272727;
     display: flex;
     align-items: center;
